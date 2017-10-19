@@ -1,0 +1,23 @@
+{
+  "name": "HangmanJS",
+  "version": "1.0.0",
+  "description": "HW 9 repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samir0bajaj/HangmanJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samir0bajaj/HangmanJS/issues"
+  },
+  "homepage": "https://github.com/samir0bajaj/HangmanJS#readme",
+  "dependencies": {
+    "inquirer": "^3.3.0",
+    "prompt": "^1.0.0"
+  }
+}
