@@ -12,7 +12,7 @@ function startGame() {
 	console.log("Guesses Remaining: " + guessesLeft);
 	selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
 	wordNow = new Letter(selectedWord);
-	// console.log(wordNow.letters + "\n");
+	
 	wordNow.displayBlanks();	
 		inquirer.prompt([
 			{
@@ -57,7 +57,7 @@ var newRound = function() {
 	console.log("Guesses Remaining: " + guessesLeft);
 	selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
 	wordNow = new Letter(selectedWord);
-	// console.log(wordNow.letters + "\n");
+
 	wordNow.displayBlanks();	
 		inquirer.prompt([
 			{
@@ -76,7 +76,6 @@ var checkGuess = function(answers) {
 			isLetterInWord = true;
 		}
 	}
-	// Check location in word and populate
 	if(isLetterInWord) {
 		for (var i = 0; i < wordNow.letters.length; i++) {
 			if (wordNow.letters[i] == answer) {
